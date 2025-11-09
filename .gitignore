@@ -1,0 +1,42 @@
+# ========================================
+# 🌱 EduNexus Backend (.gitignore)
+# Built with Spring Boot + Maven
+# ========================================
+
+# Maven build output
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Maven release files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IDE project files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs
+*.log
+logs/
+spring.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+application.properties
+application.yml
+
+# Temporary files
+*.tmp
+*.swp
