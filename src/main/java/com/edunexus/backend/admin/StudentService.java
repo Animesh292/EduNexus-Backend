@@ -25,9 +25,6 @@ public class StudentService {
 		
 		//Also store the details in students repository because registration for student
 		//1- Once registered we add to the login table
-			
-			
-		
 		
 		//save the hashed password in login table
 				Login login = new Login();
