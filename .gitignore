@@ -1,25 +1,42 @@
+build/
+spring.log
+# ========================================
+# 🌱 EduNexus Backend (.gitignore)
+# Built with Spring Boot + Maven
+# ========================================
+
 HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
+
+# Maven build output
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Maven release files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 
-### IntelliJ IDEA ###
-.idea
+# IDE project files
+.idea/
 *.iws
 *.iml
 *.ipr
+.classpath
+.project
+.settings/
+.settings
+.springBeans
+.sts4-cache
+.apt_generated
+.factorypath
+.vscode/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +46,20 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Logs
+*.log
+logs/
+spring.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+application.properties
+application.yml
+
+# Temporary files
+*.tmp
+*.swp
