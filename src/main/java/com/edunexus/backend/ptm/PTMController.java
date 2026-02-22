@@ -21,10 +21,10 @@ import com.edunexus.backend.teacher.Teacher;
 @RestController
 @RequestMapping("/api/ptm")
 @CrossOrigin
-public class PtmController {
+public class PTMController {
 
   @Autowired
-  private PtmRepository repo;
+  private PTMRepository repo;
 
   @Autowired
   private PtmNotificationService notificationService;
@@ -182,3 +182,4 @@ public class PtmController {
     return repo.findByAdminId(adminId);
   }
 }
+
