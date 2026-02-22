@@ -4,7 +4,7 @@ import com.edunexus.backend.ptm.PtmSession;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
-public interface PtmRepository extends JpaRepository<PtmSession,Long> {
+public interface PTMRepository extends JpaRepository<PtmSession,Long> {
 
  List<PtmSession> findByClassNo(Integer classNo);
 
@@ -14,3 +14,4 @@ public interface PtmRepository extends JpaRepository<PtmSession,Long> {
 
  List<PtmSession> findByTeacherId(String teacherId);
 }
+
